@@ -1,11 +1,19 @@
 import React from "react"
 import Layout from "../components/layout"
+import Form from "../components/form"
+
+import "../style/index.css"
 
 const Home = () => (
 
   <Layout>
-    <h1> "Man shall not live by bread alone, but by every word that comes from the mouth of God." - Matthew 4:4</h1>
+    <Form></Form>
+    <div class="bible-kid-img">
+      <img src ="https://picsum.photos/id/1010/400/300" alt="" />
+    </div>
   </Layout>
+  
+  
 )
 
 export default Home

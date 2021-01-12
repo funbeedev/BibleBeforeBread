@@ -3,12 +3,17 @@ import { Link } from "gatsby"
 
 const Header = ({ siteTitle }) => (
   
-  <header style={{ background: `purple` }}>
-    <h1>
-      <Link to="/" style={{ color: `white`, textDecoration: `none` }}>
-        {siteTitle}
-      </Link>
-    </h1>
+  <header>
+
+    <div class="home-header">
+      <h1>
+        <Link style={{ color:`black`, textDecoration:`none` }} to="/">
+          {siteTitle}
+        </Link>
+      </h1>
+      <blockquote> "Man shall not live by bread alone, but by every word that comes from the mouth of God." - Matthew 4:4</blockquote>
+    </div>
+
   </header>
 )
 
