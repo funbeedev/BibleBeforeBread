@@ -12,6 +12,10 @@ h2 {
     font-size: 200%;
 }
 
+footer {
+    text-align: center;
+}
+
 blockquote {
     color: teal;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
