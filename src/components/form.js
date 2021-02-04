@@ -2,18 +2,31 @@ import React from "react"
 
 const Form = () => (
   
-  <div class="home-form">
-    <h2>Daily Bible Inspirations Coming Soon. Enter your email to stay informed.</h2>
 
     <form name="subscribe" method="POST" data-netlify="true">
+
+      <p class="coming-soon"> Daily Bible Inspirations Coming Soon. </p>
+      <p class="enter-email"> Enter your email to stay informed. </p>
+
       <input type="hidden" name="form-name" value="subscribe" />
-      <div>
-        <label>Email*: </label>
-        <input type="email" name="email" />
-        <button class="myButton" type="submit">Send</button>
-      </div>
+
+        <div class="email-field">
+          <label>Email: </label>
+          <input type="email" name="email" placeholder="example@email.com"/>
+          <div class="email-line" />
+        </div> 
+
+        <div class="button-field">
+          <button class="home-button" type="submit">
+            <p class="button-text">Send</p>
+            <div class="rectangle" />
+            <div button-arrow>
+              <img src="../../static/img/arrow.png" />````
+            </div>
+          </button>
+        </div>
+
     </form>
-  </div>
 
 )
 

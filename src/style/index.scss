@@ -1,10 +1,8 @@
 $site-theme-color: #abcdef;
 $site-fonts: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
 
-body {
-    margin: 0;
-    background-color: rgb(252, 239, 255);
-}
+// Import from Google fonts Rubik, Raleway
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap&family=Raleway&display=swap');
 
 h1 {
     margin: 0;
@@ -15,38 +13,343 @@ h2 {
     font-size: 200%;
 }
 
+body {
+    /* Coming soon - V1.1 */   
+
+    position: relative;
+    width: 1440px;
+    height: 1624px;
+
+    background: #FFFFFF;
+}
+
 footer {
-    text-align: center;
+    /* 2021 © inspirezone.tech */
+
+    position: absolute;
+    width: 170px;
+    height: 19px;
+    left: 635px;
+    top: 1580px;
+
+    /* 2021 © inspirezone.tech */
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+
+    /* identical to box height */
+    letter-spacing: 0.035em;
+
+    color: #000000;
+}
+
+.home-menu-header {
+    /* Header */
+
+    position: absolute;
+    width: 1288px;
+    height: 39px;
+    left: 76px;
+    top: 39px;
+}
+
+.home-logo {
+    /* logo */
+
+    position: absolute;
+    width: 228px;
+    height: 39px;
+    left: 0px;
+    top: 0px;
+
+    background: url('../../static/img/logo.png');
+}
+
+.home-header {
+
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 50.86%;
+
+    background: url('../../static/img/header-background.png');
+}
+
+.home-quote {
+    /* Quote */
+
+    // position: absolute;
+    width: 1142px;
+    height: 169px;
+    left: 76px;
+    top: 214px;
 }
 
 blockquote {
-    color: teal;
-    font-family: site-fonts;
-    padding-top:80px; 
-    font-style: italic;
-    font-size: 250%;
+    
+    /* Without requirements or design, programming is the art of adding bugs to an empty text file. */
+
+    position: absolute;
+    width: 1142px;
+    height: 124px;
+    left: 76px;
+    top: 214px;
+
+    /* Quote */
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 57px;
+    letter-spacing: 0.035em;
+
+    color: #FEFEFE;
+        
 }
 
-div.home-header {
-    background-color: $site-theme-color;
-    background-size: cover; 
-    height: 480px; 
+.quote-verse {
+    /* - Anonymous */
+
+    position: absolute;
+    width: 534px;
+    height: 28px;
+    left: 76px;
+    top: 355px;
+
+    /* light subtitle */
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.035em;
+
+    color: #FEFEFE;
+
 }
 
-div.home-form {
-    max-width: 600;
-    padding: 0 10rem;
+.quote-line {
+    /* line */
+
+    position: absolute;
+    width: 258px;
+    height: 8px;
+    left: 58px;
+    top: 338px;
+
+    background: linear-gradient(180deg, #26899E 0%, rgba(5, 77, 130, 0) 99.99%, #1B4DAF 100%);
+
 }
 
-div.bible-kid-img {
-    text-align: center;
+.body-image {
+
+    /* illustration */
+
+    position: absolute;
+    width: 611px;
+    height: 412px;
+    left: 713px;
+    top: 951px;
+
+}
+
+.coming-soon {
+    position: absolute;
+    width: 591px;
+    height: 50px;
+    left: 0px;
+    top: 0px;
+    
+    /* title */
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 50px;
+    
+    /* identical to box height */
+    letter-spacing: 0.035em;
+    
+    color: #2F2E41;
+}
+
+.enter-email {
+
+    /* subtitle */
+
+    position: absolute;
+    width: 366px;
+    height: 30px;
+    left: 0px;
+    top: 82px;
+
+    /* subtitle */
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 30px;
+
+    /* identical to box height */
+    letter-spacing: 0.035em;
+
+    color: #2F2E41;
 }
 
 form {
-    color: black;
-    font-family: site-fonts;
-    font-size: 200%;
-    background-color: $site-theme-color;
-    padding: 1em;
+    /* Form */
+
+    position: absolute;
+    width: 591px;
+    height: 227.05px;
+    left: 149px;
+    top: 990px;
+}
+
+
+.email-field {
+    /* field */
+
+    position: absolute;
+    width: 305px;
+    height: 60.05px;
+    left: 4px;
+    top: 167px;
+}
+
+label {
+    /* label */
+    position: absolute;
+    width: 38px;
+    height: 19px;
+    left: 4px;
+    top: 167px;
+
+    /* label */
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+
+    /* identical to box height */
+    letter-spacing: 0.035em;
+
+    color: #2F2E41;
+}
+
+input[type=email] {
+    /* placeholder */
+
+    position: absolute;
+    width: 220px;
+    height: 19px;
+    left: 4px;
+    top: 196px;
+
+    /* placeholder */
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+
+    /* identical to box height */
+    letter-spacing: 0.035em;
+
+    color: #C9C3C3;
+
+    border: none;
+}
+
+.email-line {
+    /* Line 1 */
+
+    position: absolute;
+    width: 305px;
+    height: 0px;
+    left: 4px;
+    top: 226px;
+
+    border: 1px solid #2F2E41;
+    transform: rotate(0.2deg);
+}
+
+.home-button {
+    /* button */
+
+    position: absolute;
+    width: 152px;
+    height: 45px;
+    left: 323px;
+    top: 182px;
+}
+
+.button-arrow {
+    /* Group */
+
+    position: absolute;
+    left: 65.13%;
+    right: 26.08%;
+    top: 35.56%;
+    bottom: 34.74%;
+
+    /* Vector */
+
+    position: absolute;
+    left: 65.13%;
+    right: 26.08%;
+    top: 35.56%;
+    bottom: 34.74%;
+
+    background: #FEFEFE;
+}
+
+.button-field {
+    /* button */
+
+    position: absolute;
+    width: 152px;
+    height: 45px;
+    left: 323px;
+    top: 182px;
+}
+
+.button-text {
+    /* Send */
+
+    position: absolute;
+    left: 31.58%;
+    right: 42.76%;
+    top: 28.89%;
+    bottom: 28.89%;
+
+    /* Send */
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+
+    /* identical to box height */
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.rectangle {
+    /* Rectangle 1 */
+
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    background: #1C6D85;
 }
 
