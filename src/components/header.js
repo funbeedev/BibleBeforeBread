@@ -1,12 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
+import logo from "../../static/img/logo.png"
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   
   <header>
       <h1>
         <Link style={{ color:`black`, textDecoration:`none` }} to="/">
-          {siteTitle}
+          <img src={logo} className='home-logo' alt="Logo" />
         </Link>
       </h1>
   </header>
