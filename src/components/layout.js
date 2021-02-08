@@ -6,7 +6,7 @@ const Layout = ({ children }) => (
 
   <>
     <div class="site-title">
-      <Header siteTitle="Bible Before Bread" />
+      <Header />
     </div>
 
     <div>

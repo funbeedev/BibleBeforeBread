@@ -14,13 +14,8 @@ h2 {
 }
 
 body {
-    /* Coming soon - V1.1 */   
-
-    position: relative;
-    width: 1440px;
-    height: 1624px;
-
-    background: #FFFFFF;
+    margin: 0;
+    padding: 0;
 }
 
 footer {
@@ -57,57 +52,47 @@ footer {
 
 .home-logo {
     /* logo */
-
     position: absolute;
     width: 228px;
     height: 39px;
-    left: 0px;
-    top: 0px;
-
+    top: 76px;
+    margin-left: 76px;
+    background-repeat: no-repeat;
     background: url('../../static/img/logo.png');
+    z-index: 2;
 }
 
 .home-header {
-
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 50.86%;
-
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 800px;
     background: url('../../static/img/header-background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .home-quote {
     /* Quote */
-
-    // position: absolute;
-    width: 1142px;
-    height: 169px;
-    left: 76px;
-    top: 214px;
+    width: 100%;
+    padding: 0 76px 40px;
 }
 
 blockquote {
-    
     /* Without requirements or design, programming is the art of adding bugs to an empty text file. */
 
-    position: absolute;
-    width: 1142px;
-    height: 124px;
-    left: 76px;
-    top: 214px;
-
     /* Quote */
-    font-family: Rubik;
+    margin: 0;
+    width: 100%;
+    font-family: 'Rubik';
     font-style: normal;
     font-weight: 500;
     font-size: 48px;
     line-height: 57px;
     letter-spacing: 0.035em;
-
     color: #FEFEFE;
-        
 }
 
 .quote-verse {
@@ -116,11 +101,9 @@ blockquote {
     position: absolute;
     width: 534px;
     height: 28px;
-    left: 76px;
-    top: 355px;
 
     /* light subtitle */
-    font-family: Raleway;
+    font-family: 'Raleway';
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -131,38 +114,21 @@ blockquote {
 
 }
 
-.quote-line {
-    /* line */
-
-    position: absolute;
-    width: 258px;
-    height: 8px;
-    left: 58px;
-    top: 338px;
-
-    background: linear-gradient(180deg, #26899E 0%, rgba(5, 77, 130, 0) 99.99%, #1B4DAF 100%);
-
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    min-height: 800px;
+    margin-top: 4em;
 }
 
 .body-image {
-
     /* illustration */
 
-    position: absolute;
-    width: 611px;
-    height: 412px;
-    left: 713px;
-    top: 951px;
-
+    width: 50%;
+    padding: 2em;
 }
 
 .coming-soon {
-    position: absolute;
-    width: 591px;
-    height: 50px;
-    left: 0px;
-    top: 0px;
-    
     /* title */
     font-family: Rubik;
     font-style: normal;
@@ -177,15 +143,6 @@ blockquote {
 }
 
 .enter-email {
-
-    /* subtitle */
-
-    position: absolute;
-    width: 366px;
-    height: 30px;
-    left: 0px;
-    top: 82px;
-
     /* subtitle */
     font-family: Open Sans;
     font-style: normal;
@@ -195,18 +152,15 @@ blockquote {
 
     /* identical to box height */
     letter-spacing: 0.035em;
-
     color: #2F2E41;
 }
 
 form {
     /* Form */
 
-    position: absolute;
-    width: 591px;
-    height: 227.05px;
-    left: 149px;
-    top: 990px;
+    position: relative;
+    width: 50%;
+    padding-left: 4em;
 }
 
 
@@ -216,7 +170,6 @@ form {
     position: absolute;
     width: 305px;
     height: 60.05px;
-    left: 4px;
     top: 167px;
 }
 
@@ -286,6 +239,8 @@ input[type=email] {
     height: 45px;
     left: 323px;
     top: 182px;
+    background: #1C6D85;
+    padding: 0;
 }
 
 .button-arrow {
@@ -314,18 +269,16 @@ input[type=email] {
     position: absolute;
     width: 152px;
     height: 45px;
-    left: 323px;
     top: 182px;
 }
 
 .button-text {
     /* Send */
 
-    position: absolute;
-    left: 31.58%;
-    right: 42.76%;
-    top: 28.89%;
-    bottom: 28.89%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 
     /* Send */
     font-family: Open Sans;
