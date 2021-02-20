@@ -1,0 +1,286 @@
+$site-theme-color: #abcdef;
+$site-fonts: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
+
+// Import from Google fonts Rubik, Raleway
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap&family=Raleway&display=swap');
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    font-family: $site-fonts;
+    font-size: 200%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    /* 2021 © inspirezone.tech */
+
+    position: relative;
+    bottom: 20px;
+    text-align: center;
+
+    /* 2021 © inspirezone.tech */
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+
+    /* identical to box height */
+    letter-spacing: 0.035em;
+
+    color: #000000;
+}
+
+.home-menu-header {
+    /* Header */
+
+    position: absolute;
+    width: 1288px;
+    height: 39px;
+    left: 76px;
+    top: 39px;
+}
+
+.home-logo {
+    /* logo */
+    position: absolute;
+    height: 39px;
+    top: 39px;
+    margin-left: 56px;
+    background-repeat: no-repeat;
+    background: url('../../static/img/logo.png');
+    z-index: 2;
+}
+
+.home-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 800px;
+    background: url('../../static/img/header-background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-quote {
+    /* Quote */
+    width: 100%;
+    padding: 0 76px 40px;
+}
+
+blockquote {
+    /* Without requirements or design, programming is the art of adding bugs to an empty text file. */
+
+    /* Quote */
+    margin: 0;
+    width: 100%;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 57px;
+    letter-spacing: 0.035em;
+    color: #FEFEFE;
+}
+
+.quote-verse {
+    /* - Anonymous */
+
+    position: absolute;
+    width: 534px;
+    height: 28px;
+
+    /* light subtitle */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.035em;
+
+    color: #FEFEFE;
+
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    min-height: 800px;
+    margin-top: 4em;
+}
+
+.body-image {
+    /* illustration */
+
+    width: 50%;
+    padding: 2em;
+}
+
+.coming-soon {
+    /* title */
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 50px;
+    
+    /* identical to box height */
+    letter-spacing: 0.035em;
+    
+    color: #2F2E41;
+}
+
+.enter-email {
+    /* subtitle */
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 30px;
+
+    /* identical to box height */
+    letter-spacing: 0.035em;
+    color: #2F2E41;
+}
+
+form {
+    /* Form */
+
+    position: relative;
+    width: 50%;
+    padding-left: 4em;
+}
+
+
+.email-field {
+    /* field */
+
+    position: absolute;
+    width: 305px;
+    height: 60.05px;
+    top: 167px;
+}
+
+label {
+    /* label */
+    position: absolute;
+    width: 38px;
+    height: 19px;
+    left: 4px;
+    top: 167px;
+
+    /* label */
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+
+    /* identical to box height */
+    letter-spacing: 0.035em;
+
+    color: #2F2E41;
+}
+
+input[type=email] {
+    /* placeholder */
+
+    position: absolute;
+    width: 220px;
+    height: 19px;
+    left: 4px;
+    top: 196px;
+
+    /* placeholder */
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+
+    /* identical to box height */
+    letter-spacing: 0.035em;
+
+    color: #C9C3C3;
+
+    border: none;
+}
+
+.email-line {
+    /* Line 1 */
+
+    position: absolute;
+    width: 305px;
+    height: 0px;
+    left: 4px;
+    top: 226px;
+    border: 1px solid #2F2E41;
+}
+
+.home-button {
+    /* button */
+
+    position: absolute;
+    width: 152px;
+    height: 45px;
+    left: 323px;
+    top: 170px;
+    background: #104b5e;
+    padding: 0;
+}
+
+.home-button:hover {
+    background-color: #52a1b9;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button-arrow {
+    /* Group */
+
+    position: absolute;
+    left: 65.13%;
+    right: 26.08%;
+    top: 35.56%;
+    bottom: 34.74%;
+}
+
+.button-field {
+    /* button */
+
+    position: absolute;
+    width: 152px;
+    height: 45px;
+    top: 182px;
+}
+
+.button-text {
+    /* Send */
+
+    display: flex;
+    padding: 0px 65px 0px 48px;
+    width: 100%;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+
+    /* identical to box height */
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+

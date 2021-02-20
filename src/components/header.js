@@ -1,19 +1,15 @@
 import React from "react"
 import { Link } from "gatsby"
+import logo from "../../static/img/logo.png"
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   
   <header>
-
-    <div class="home-header">
       <h1>
         <Link style={{ color:`black`, textDecoration:`none` }} to="/">
-          {siteTitle}
+          <img src={logo} className='home-logo' alt="Logo" />
         </Link>
       </h1>
-      <blockquote> "Man shall not live by bread alone, but by every word that comes from the mouth of God." - Matthew 4:4</blockquote>
-    </div>
-
   </header>
 )
 
