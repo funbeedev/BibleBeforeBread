@@ -1,4 +1,5 @@
 import React from "react"
+import arrow from "../../static/img/arrow.png"
 
 const Form = () => (
   
@@ -19,10 +20,7 @@ const Form = () => (
         <div class="button-field">
           <button class="home-button" type="submit">
             <p class="button-text">Send</p>
-            <div class="rectangle" />
-            <div button-arrow>
-              <img src="../../static/img/arrow.png" />````
-            </div>
+            <img src={arrow} className="button-arrow" alt="Arrow" />
           </button>
         </div>
 

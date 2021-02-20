@@ -21,11 +21,9 @@ body {
 footer {
     /* 2021 © inspirezone.tech */
 
-    position: absolute;
-    width: 170px;
-    height: 19px;
-    left: 635px;
-    top: 1580px;
+    position: relative;
+    bottom: 20px;
+    text-align: center;
 
     /* 2021 © inspirezone.tech */
     font-family: Open Sans;
@@ -53,10 +51,9 @@ footer {
 .home-logo {
     /* logo */
     position: absolute;
-    width: 228px;
     height: 39px;
-    top: 76px;
-    margin-left: 76px;
+    top: 39px;
+    margin-left: 56px;
     background-repeat: no-repeat;
     background: url('../../static/img/logo.png');
     z-index: 2;
@@ -226,9 +223,7 @@ input[type=email] {
     height: 0px;
     left: 4px;
     top: 226px;
-
     border: 1px solid #2F2E41;
-    transform: rotate(0.2deg);
 }
 
 .home-button {
@@ -238,9 +233,15 @@ input[type=email] {
     width: 152px;
     height: 45px;
     left: 323px;
-    top: 182px;
-    background: #1C6D85;
+    top: 170px;
+    background: #104b5e;
     padding: 0;
+}
+
+.home-button:hover {
+    background-color: #52a1b9;
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
 
 .button-arrow {
@@ -251,16 +252,6 @@ input[type=email] {
     right: 26.08%;
     top: 35.56%;
     bottom: 34.74%;
-
-    /* Vector */
-
-    position: absolute;
-    left: 65.13%;
-    right: 26.08%;
-    top: 35.56%;
-    bottom: 34.74%;
-
-    background: #FEFEFE;
 }
 
 .button-field {
@@ -276,11 +267,9 @@ input[type=email] {
     /* Send */
 
     display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 0px 65px 0px 48px;
     width: 100%;
 
-    /* Send */
     font-family: Open Sans;
     font-style: normal;
     font-weight: 600;
@@ -294,15 +283,4 @@ input[type=email] {
     color: #FFFFFF;
 }
 
-.rectangle {
-    /* Rectangle 1 */
-
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-
-    background: #1C6D85;
-}
 
