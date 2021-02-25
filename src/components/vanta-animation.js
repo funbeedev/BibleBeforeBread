@@ -3,6 +3,8 @@ import React from "react"
 import { useState, useEffect, useRef } from 'react'
 
 import CLOUDS from "vanta/dist/vanta.clouds.min"
+// Need to load three or will get "TypeError: undefined has no properties". not completely sure why
+import * as THREE from "three" 
 
 const VantaCloudsAnimation = (props) => {
   const [vantaEffect, setVantaEffect] = useState(0)
@@ -10,6 +12,7 @@ const VantaCloudsAnimation = (props) => {
   useEffect(() => {
     if (!vantaEffect) {
       setVantaEffect(CLOUDS({
+        THREE, // used here to prevent "TypeError: undefined has no properties". not completely sure why
         el: myRef.current,
         mouseControls: true,
         touchControls: true,
