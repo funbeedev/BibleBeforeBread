@@ -12,7 +12,7 @@ const Form = () => (
       <input type="hidden" name="form-name" value="subscribe" />
 
         <div class="email-field">
-          <label>Email: </label>
+          <label>Your Email: </label>
           <input type="email" name="email" placeholder="example@email.com"/>
           <div class="email-line" />
         </div> 
