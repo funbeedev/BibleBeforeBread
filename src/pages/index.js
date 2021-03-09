@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Form from "../components/form"
 import line from "../../static/img/line.png"
-import homesvg from "../../static/img/home.svg"
+import form_image from "../../static/img/bible-1920x1080.png"
 
 import Helmet from "react-helmet"
 import VantaCloudsAnimation from "../components/vanta-animation"
@@ -30,9 +30,7 @@ const Home = () => (
 
     <div className="form-container">
       <Form />
-      <div class="body-image">
-        <img src={homesvg} />
-      </div>
+      <img class="form-image" src={form_image} />
     </div>
 
   </Layout>
