@@ -55,7 +55,6 @@ footer {
     top: 39px;
     margin-left: 56px;
     background-repeat: no-repeat;
-    background: url('../../static/img/logo.png');
     z-index: 2;
 }
 
@@ -65,7 +64,7 @@ footer {
     align-items: center;
     width: 100%;
     min-height: 800px;
-    background: url('../../static/img/header-background.png');
+    background: url('../../static/img/cloud-fallback-background.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -117,11 +116,14 @@ blockquote {
     margin-top: 4em;
 }
 
-.body-image {
-    /* illustration */
+.form-image {
 
     width: 50%;
-    padding: 2em;
+    height: 40%;
+    margin: 3em 5em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 20px;
 }
 
 .coming-soon {
@@ -172,8 +174,8 @@ form {
 label {
     /* label */
     position: absolute;
-    width: 38px;
-    height: 19px;
+    width: 145px;
+    height: 30px;
     left: 4px;
     top: 167px;
 
@@ -181,7 +183,7 @@ label {
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 22px;
     line-height: 19px;
 
     /* identical to box height */
@@ -194,8 +196,8 @@ input[type=email] {
     /* placeholder */
 
     position: absolute;
-    width: 220px;
-    height: 19px;
+    width: 300px;
+    height: 25px;
     left: 4px;
     top: 196px;
 
@@ -203,15 +205,19 @@ input[type=email] {
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 19px;
 
     /* identical to box height */
     letter-spacing: 0.035em;
 
-    color: #C9C3C3;
+    color: #000000;
 
     border: none;
+}
+
+input::placeholder {
+    color: #727272; 
 }
 
 .email-line {
