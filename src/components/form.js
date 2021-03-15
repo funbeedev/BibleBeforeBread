@@ -1,4 +1,5 @@
 import React from "react"
+import arrow from "../../static/img/arrow.png"
 
 const Form = () => (
   
@@ -11,7 +12,7 @@ const Form = () => (
       <input type="hidden" name="form-name" value="subscribe" />
 
         <div class="email-field">
-          <label>Email: </label>
+          <label>Your Email: </label>
           <input type="email" name="email" placeholder="example@email.com"/>
           <div class="email-line" />
         </div> 
@@ -19,10 +20,7 @@ const Form = () => (
         <div class="button-field">
           <button class="home-button" type="submit">
             <p class="button-text">Send</p>
-            <div class="rectangle" />
-            <div button-arrow>
-              <img src="../../static/img/arrow.png" />````
-            </div>
+            <img src={arrow} className="button-arrow" alt="Arrow" />
           </button>
         </div>
 

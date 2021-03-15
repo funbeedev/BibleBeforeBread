@@ -21,11 +21,9 @@ body {
 footer {
     /* 2021 © inspirezone.tech */
 
-    position: absolute;
-    width: 170px;
-    height: 19px;
-    left: 635px;
-    top: 1580px;
+    position: relative;
+    bottom: 20px;
+    text-align: center;
 
     /* 2021 © inspirezone.tech */
     font-family: Open Sans;
@@ -53,22 +51,20 @@ footer {
 .home-logo {
     /* logo */
     position: absolute;
-    width: 228px;
     height: 39px;
-    top: 76px;
-    margin-left: 76px;
+    top: 39px;
+    margin-left: 56px;
     background-repeat: no-repeat;
-    background: url('../../static/img/logo.png');
     z-index: 2;
 }
 
-.home-header {
+.vanta-clouds-background {
     position: relative;
     display: flex;
     align-items: center;
     width: 100%;
     min-height: 800px;
-    background: url('../../static/img/header-background.png');
+    background: url('../../static/img/cloud-fallback-background.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -92,7 +88,7 @@ blockquote {
     font-size: 48px;
     line-height: 57px;
     letter-spacing: 0.035em;
-    color: #FEFEFE;
+    color: #2F2E41;
 }
 
 .quote-verse {
@@ -109,8 +105,7 @@ blockquote {
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 0.035em;
-
-    color: #FEFEFE;
+    color: #2F2E41;
 
 }
 
@@ -121,11 +116,14 @@ blockquote {
     margin-top: 4em;
 }
 
-.body-image {
-    /* illustration */
+.form-image {
 
     width: 50%;
-    padding: 2em;
+    height: 40%;
+    margin: 3em 5em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 20px;
 }
 
 .coming-soon {
@@ -176,8 +174,8 @@ form {
 label {
     /* label */
     position: absolute;
-    width: 38px;
-    height: 19px;
+    width: 145px;
+    height: 30px;
     left: 4px;
     top: 167px;
 
@@ -185,7 +183,7 @@ label {
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 22px;
     line-height: 19px;
 
     /* identical to box height */
@@ -198,8 +196,8 @@ input[type=email] {
     /* placeholder */
 
     position: absolute;
-    width: 220px;
-    height: 19px;
+    width: 300px;
+    height: 25px;
     left: 4px;
     top: 196px;
 
@@ -207,15 +205,19 @@ input[type=email] {
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 19px;
 
     /* identical to box height */
     letter-spacing: 0.035em;
 
-    color: #C9C3C3;
+    color: #000000;
 
     border: none;
+}
+
+input::placeholder {
+    color: #727272; 
 }
 
 .email-line {
@@ -226,9 +228,7 @@ input[type=email] {
     height: 0px;
     left: 4px;
     top: 226px;
-
     border: 1px solid #2F2E41;
-    transform: rotate(0.2deg);
 }
 
 .home-button {
@@ -238,9 +238,15 @@ input[type=email] {
     width: 152px;
     height: 45px;
     left: 323px;
-    top: 182px;
-    background: #1C6D85;
+    top: 170px;
+    background: #104b5e;
     padding: 0;
+}
+
+.home-button:hover {
+    background-color: #52a1b9;
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
 
 .button-arrow {
@@ -251,16 +257,6 @@ input[type=email] {
     right: 26.08%;
     top: 35.56%;
     bottom: 34.74%;
-
-    /* Vector */
-
-    position: absolute;
-    left: 65.13%;
-    right: 26.08%;
-    top: 35.56%;
-    bottom: 34.74%;
-
-    background: #FEFEFE;
 }
 
 .button-field {
@@ -276,11 +272,9 @@ input[type=email] {
     /* Send */
 
     display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 0px 65px 0px 48px;
     width: 100%;
 
-    /* Send */
     font-family: Open Sans;
     font-style: normal;
     font-weight: 600;
@@ -294,15 +288,4 @@ input[type=email] {
     color: #FFFFFF;
 }
 
-.rectangle {
-    /* Rectangle 1 */
-
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-
-    background: #1C6D85;
-}
 
