@@ -2,7 +2,7 @@ $site-theme-color: #abcdef;
 $site-fonts: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
 
 // Import from Google fonts Rubik, Raleway
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap&family=Raleway&display=swap&family=Open+Sans&display=swap');
 
 h1 {
     margin: 0;
@@ -53,7 +53,7 @@ footer {
     position: absolute;
     height: 39px;
     top: 39px;
-    margin-left: 56px;
+    margin-left: 2rem;
     background-repeat: no-repeat;
     z-index: 2;
 }
@@ -73,7 +73,7 @@ footer {
 .home-quote {
     /* Quote */
     width: 100%;
-    padding: 0 76px 40px;
+    padding: 0 2rem 9rem;
 }
 
 blockquote {
@@ -89,13 +89,16 @@ blockquote {
     line-height: 57px;
     letter-spacing: 0.035em;
     color: #2F2E41;
+
+    @media (max-width: 768px) {
+        font-size: 1.5rem;
+    }
 }
 
 .quote-verse {
     /* - Anonymous */
 
     position: absolute;
-    width: 534px;
     height: 28px;
 
     /* light subtitle */
@@ -112,10 +115,10 @@ blockquote {
 .form-container {
     display: flex;
     justify-content: space-between;
-    min-height: 800px;
-    margin-top: 4em;
+    margin: 4em;
 
     @media (max-width: 768px) {
+        margin: 4em 4em 0 4em;
         flex-direction: column;
     }
 }
@@ -123,13 +126,11 @@ blockquote {
 .form-image {
     width: 50%;
     height: 40%;
-    margin: 3em 5em;
-    background-size: contain;
-    background-repeat: no-repeat;
     border-radius: 20px;
 
     @media (max-width: 768px) {
         width: 100%;
+        margin-bottom: 2em;
     }
 }
 
@@ -164,93 +165,113 @@ form {
     /* Form */
     position: relative;
     width: 50%;
-    padding-left: 4em;
+    padding-right: 4em;
+    padding-bottom: 4em;
 
     @media (max-width: 768px) {
         width: 100%;
     }
 }
 
+.fields {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 768px) {
+        align-items: initial;
+        flex-direction: column;
+    }
+}
 
 .email-field {
     /* field */
+    display: flex;
+    flex-flow: column-reverse;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
 
-    position: absolute;
-    width: 305px;
-    height: 60.05px;
-    top: 167px;
+label, input {
+    transition: all 0.2s;
+    touch-action: manipulation;
 }
 
 label {
     /* label */
-    position: absolute;
-    width: 145px;
-    height: 30px;
-    left: 4px;
-    top: 167px;
-
-    /* label */
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 22px;
-    line-height: 19px;
-
+    font-size: 15px;
     /* identical to box height */
     letter-spacing: 0.035em;
-
     color: #2F2E41;
 }
 
 input[type=email] {
     /* placeholder */
-
-    position: absolute;
-    width: 300px;
-    height: 25px;
-    left: 4px;
-    top: 196px;
+    border: none;
+    border-bottom: 1px solid #2F2E41;
+    -webkit-appearance: none;
+    border-radius: 0;
+    padding: 0;
+    cursor: text;
 
     /* placeholder */
+    font-size: 1.2em;
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 19px;
-
     /* identical to box height */
     letter-spacing: 0.035em;
-
     color: #000000;
-
-    border: none;
 }
 
-input::placeholder {
+#email:focus {
+    outline: 0;
+    border-bottom: 1px solid #2F2E41;
+}
+
+#email::placeholder {
     color: #727272; 
 }
 
-.email-line {
-    /* Line 1 */
+::-webkit-input-placeholder {
+    opacity: 0;
+    transition: inherit;
+}
 
-    position: absolute;
-    width: 305px;
-    height: 0px;
-    left: 4px;
-    top: 226px;
-    border: 1px solid #2F2E41;
+#email:focus::-webkit-input-placeholder {
+    opacity: 1;
+}
+
+#email:placeholder-shown + label {
+    cursor: text;
+    max-width: 66.66%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transform-origin: left bottom;
+    transform: translate(0, 1.225rem) scale(1.25);
+}
+
+#email:not(:placeholder-shown) + label,
+#email:focus + label {
+    transform: translate(0, 0) scale(1);
+    cursor: pointer;
 }
 
 .home-button {
     /* button */
-
-    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 152px;
     height: 45px;
     left: 323px;
     top: 170px;
     background: #104b5e;
     padding: 0;
+    border: none;
 }
 
 .home-button:hover {
@@ -261,40 +282,19 @@ input::placeholder {
 
 .button-arrow {
     /* Group */
-
-    position: absolute;
-    left: 65.13%;
-    right: 26.08%;
-    top: 35.56%;
-    bottom: 34.74%;
-}
-
-.button-field {
-    /* button */
-
-    position: absolute;
-    width: 152px;
-    height: 45px;
-    top: 182px;
+    margin-left: 10px;
 }
 
 .button-text {
     /* Send */
-
-    display: flex;
-    padding: 0px 65px 0px 48px;
-    width: 100%;
-
     font-family: Open Sans;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
-    line-height: 19px;
 
     /* identical to box height */
     letter-spacing: 0.035em;
     text-transform: uppercase;
-
     color: #FFFFFF;
 }
 
