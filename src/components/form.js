@@ -14,7 +14,7 @@ const Form = () => (
       <div class="fields">
         <div class="email-field">
           <input type="email" name="email" id="email" placeholder="example@email.com"/>
-          <label for="email">Your Email </label>
+          <label for="email" htmlFor="email">Your Email </label>
         </div> 
 
         <button class="home-button" type="submit">
