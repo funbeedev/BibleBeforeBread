@@ -235,13 +235,43 @@ input[type=email] {
     color: #727272; 
 }
 
-::-webkit-input-placeholder {
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    opacity: 0;
+    transition: inherit;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+    opacity: 0;
+    transition: inherit;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+    opacity: 0;
+    transition: inherit;
+}
+
+:-moz-placeholder { /* Firefox 18- */
     opacity: 0;
     transition: inherit;
 }
 
 #email:focus::-webkit-input-placeholder {
     opacity: 1;
+}
+
+#email:focus::-moz-placeholder { 
+    opacity: 0;
+    transition: inherit;
+}
+
+#email:focus:-ms-input-placeholder { 
+    opacity: 0;
+    transition: inherit;
+}
+
+#email:focus:-moz-placeholder { 
+    opacity: 0;
+    transition: inherit;
 }
 
 #email:placeholder-shown + label {
