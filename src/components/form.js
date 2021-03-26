@@ -11,19 +11,17 @@ const Form = () => (
 
       <input type="hidden" name="form-name" value="subscribe" />
 
+      <div class="fields">
         <div class="email-field">
-          <label>Your Email: </label>
-          <input type="email" name="email" placeholder="example@email.com"/>
-          <div class="email-line" />
+          <input type="email" name="email" id="email" placeholder="example@email.com"/>
+          <label for="email" htmlFor="email">Your Email </label>
         </div> 
 
-        <div class="button-field">
-          <button class="home-button" type="submit">
-            <p class="button-text">Send</p>
-            <img src={arrow} className="button-arrow" alt="Arrow" />
-          </button>
-        </div>
-
+        <button class="home-button" type="submit">
+          <span class="button-text">Send</span>
+          <img src={arrow} className="button-arrow" alt="Arrow" />
+        </button>
+      </div>
     </form>
 
 )

@@ -30,7 +30,7 @@ const Home = () => (
 
     <div className="form-container">
       <Form />
-      <img class="form-image" src={form_image} />
+      <img class="form-image" src={form_image} alt="" />
     </div>
 
   </Layout>
