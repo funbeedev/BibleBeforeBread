@@ -11,7 +11,7 @@
 [BibleBeforeBread](https://biblebeforebread.com/) is a website to encourage a daily habit of reading God's word through featured verses and a variety of interactive features. This is a work in progress with the aim of creating unique web app features that will provide a fun way to interact with scripture and ultimately bring you closer to our Lord Jesus Christ ✝️.
 
 **Want to get involved in this project? Contributions are welcome!**  
-Read the [CONTRIBUTING] rules (./CONTRIBUTING.md) and see the [ISSUES](../../issues) section for ways you can help out.
+Read the [CONTRIBUTING](./CONTRIBUTING.md) rules and see the [ISSUES](../../issues) section for ways you can help out.
 
 ## ⚙️ Useful to know ⚙️
 
