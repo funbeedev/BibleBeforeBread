@@ -3,7 +3,6 @@ import Header from "./header"
 import Footer from "./footer"
 
 const Layout = ({ children }) => (
-
   <>
     <div class="site-title">
       <Header />
