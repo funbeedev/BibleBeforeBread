@@ -1,3 +1,5 @@
+<img src="https://inspirezone.tech/wp-content/uploads/2022/10/Accepting-Contributions-for-Hacktoberfest2022.png" width="300">
+
 <p align="center">
   <a href="https://biblebeforebread.com">
     <img alt="BibleBeforeBread" src="repo_images/readme_header.png" width="" />
