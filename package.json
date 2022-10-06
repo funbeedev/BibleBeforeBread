@@ -26,6 +26,7 @@
     "vanta": "^0.5.21"
   },
   "devDependencies": {
+    "all-contributors-cli": "^6.23.0",
     "prettier": "2.2.1"
   },
   "repository": {

@@ -1,4 +1,7 @@
 <img src="https://inspirezone.tech/wp-content/uploads/2022/10/Accepting-Contributions-for-Hacktoberfest2022.png" width="300">
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <p align="center">
   <a href="https://biblebeforebread.com">
@@ -53,3 +56,16 @@ This will allow you to view the site on a web browser at `http://localhost:8000/
 Make your changes and test in your local environment. Then submit a PR to this repo.
 
 ### ❓ Got a question, something to discuss or just curious to learn more about this project? Check out the [DISCUSSION](../../discussions) section.
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
