@@ -11,7 +11,9 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate"
   },
   "dependencies": {
     "gatsby": "^2.26.1",
@@ -26,6 +28,7 @@
     "vanta": "^0.5.21"
   },
   "devDependencies": {
+    "all-contributors-cli": "^6.23.0",
     "prettier": "2.2.1"
   },
   "repository": {
