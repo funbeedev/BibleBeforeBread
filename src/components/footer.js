@@ -3,7 +3,7 @@ import React from "react"
 const Footer = ({ children }) => (
   
   <footer>
-      2021 © Bible Before Bread
+      2023 © Bible Before Bread
   </footer>
 )
 
